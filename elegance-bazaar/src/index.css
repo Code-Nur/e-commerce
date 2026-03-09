@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 30% 98%;
+    --foreground: 160 30% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 10%;
+
+    --primary: 160 45% 22%;
+    --primary-foreground: 40 30% 98%;
+
+    --secondary: 38 90% 55%;
+    --secondary-foreground: 160 30% 10%;
+
+    --muted: 40 20% 93%;
+    --muted-foreground: 160 10% 45%;
+
+    --accent: 38 90% 55%;
+    --accent-foreground: 160 30% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 88%;
+    --input: 40 15% 88%;
+    --ring: 160 45% 22%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 160 30% 10%;
+    --sidebar-foreground: 40 30% 98%;
+    --sidebar-primary: 38 90% 55%;
+    --sidebar-primary-foreground: 160 30% 10%;
+    --sidebar-accent: 160 25% 18%;
+    --sidebar-accent-foreground: 40 30% 98%;
+    --sidebar-border: 160 20% 18%;
+    --sidebar-ring: 38 90% 55%;
+
+    /* Custom tokens */
+    --hero-gradient: linear-gradient(135deg, hsl(160 45% 22%), hsl(160 35% 32%));
+    --card-shadow: 0 4px 24px -4px hsl(160 30% 10% / 0.08);
+    --card-shadow-hover: 0 12px 32px -8px hsl(160 30% 10% / 0.15);
+    --badge-sale: 0 72% 51%;
+    --badge-new: 160 60% 40%;
+    --star: 45 93% 58%;
+  }
+
+  .dark {
+    --background: 160 30% 6%;
+    --foreground: 40 30% 95%;
+    --card: 160 25% 10%;
+    --card-foreground: 40 30% 95%;
+    --popover: 160 25% 10%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 38 90% 55%;
+    --primary-foreground: 160 30% 10%;
+    --secondary: 160 35% 25%;
+    --secondary-foreground: 40 30% 95%;
+    --muted: 160 20% 15%;
+    --muted-foreground: 40 10% 55%;
+    --accent: 38 90% 55%;
+    --accent-foreground: 160 30% 10%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 160 15% 18%;
+    --input: 160 15% 18%;
+    --ring: 38 90% 55%;
+    --sidebar-background: 160 30% 6%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 38 90% 55%;
+    --sidebar-primary-foreground: 160 30% 10%;
+    --sidebar-accent: 160 20% 12%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 160 15% 15%;
+    --sidebar-ring: 38 90% 55%;
+    --badge-sale: 0 72% 51%;
+    --badge-new: 160 60% 40%;
+    --star: 45 93% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply font-bold tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--hero-gradient);
+  }
+  .shadow-card {
+    box-shadow: var(--card-shadow);
+  }
+  .shadow-card-hover {
+    box-shadow: var(--card-shadow-hover);
+  }
+}
