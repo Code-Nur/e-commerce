@@ -64,4 +64,4 @@ Loyihalar to'liq analiz qilingan va barcha xatoliklardan tozalangan. Tahlilni is
 - Production uchun tayyorlash: `npm run build`
 
 ## 🤝 Hissa qo'shish (Contributing)
-Loyiha faqat test va xususiy maqsadlar uchun qurilgan. Kodingizni doim `lint` tekshiruvidan o'tkazishni va yangi UI qismlar yaratganda React-refresh xatolarini oldini olish uchun fayl boshiga kerakli `// eslint-disable...` qoidalarini qo'shishni unutmang (batafsil loyihalar ichidagi README da o'qing).
+Loyiha faqat xususiy maqsadlar uchun qurilgan. Kodni ochib aslo o'zgartirmang kodlar 24/7 nazoratim ostida, muammo istamasangiz kodga umuman tegmang! Agar o'zgartirish kiritmoqchi bo'lsangiz @CodeNur ga aloqaga chiqing.
