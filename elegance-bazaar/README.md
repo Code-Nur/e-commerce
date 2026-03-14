@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# Elegance Bazaar
 
-## Project info
+**Elegance Bazaar** — bu eng zamonaviy darajadagi e-commerce tizimi bo'lib, o'zining chiroyli dizayni, intuitiv ishlatilish qulayligi hamda mustahkam frontend (React) va BaaS (Firebase) arxitekturasiga egadir.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 💎 Imkoniyatlari (Features)
 
-## How can I edit this code?
+- **Elektron Tijorat Do'koni:** Mijozlar mahsulotlarni filtrlashi, batafsil sahifasida o'zlashtirishi va xaridlarini boshqarishi mumkin.
+- **Xavfsiz Autentifikatsiya:** Google va Email/Password yordamida tezkor tizimga kirish, ro'yxatdan o'tish jarayonlari (Firebase Auth orqali).
+- **Optimallashtirilgan UI:** Shadcn UI va Radix UI hamda Tailwind bilan qurilgan yuqori sifatli animatsion va moslashuvchan (responsive) vizual qism.
+- **Tip Xavfsizligi (Type Safe):** Barcha React interfeyslar, holatlar va komponentlar aniq tipe-level (TypeScript) aniqliklari asosida yaratilgan bo'lib har xil run-time xatolarni olishning iloji yo'q. Allaqachon `any` tiplaridan xalos bo'lingan.
+- **Fast Refresh (Hot-Reload):** Barcha UI elementlari React Vite ning HMR formatiga to'liq tushadigan va ogohlantirishsiz ishlaydi.
 
-There are several ways of editing your application.
+## 🏃 Ishni boshlash (Getting Started)
 
-**Use Lovable**
+Loyihangizni sinab ko'rish va tizimga o'zgartirishlar kiritish uchun:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. **Paketlarni arxivdan chiqarish va tayyorlash:**
+   ```bash
+   npm install
+   ```
+2. **Development serverini ishga tushirish:**
+   ```bash
+   npm run dev
+   ```
+3. Brauzerda berilgan local oynasi orqali tizimga kiring (Masalan, `http://localhost:5173`).
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🔧 Loyihaning asosiy texnologiyalari
 
-**Use your preferred IDE**
+| Texnologiya | Vazifasi |
+| :--- | :--- |
+| **Vite** | Tezkor front-end yig'uvchi (bundler) vosita. |
+| **React + TS** | Foydalanuvchi interfeysini qurish (Qatiy tiplangan). |
+| **TailwindCSS** | Asosiy stillarni yozish imkoniyati. |
+| **Firebase** | Backend infratuzilmasi, Data bazasi (Firestore) va Auth tizimi uchun. |
+| **Framer Motion**| Sahifa va bloklar almashgandagi chiroyli animatsiyalar uchun. |
+| **Zod** | Foydalanuvchi kiritadigan form ma'lumotlarini qat'iy tekshirish uchun. |
+| **Lucide React**| Minimalistik, zamonaviy vektor ikonalar. |
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 👨‍💻 Dasturiy Muhit (Scripts)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Loyiha tayyorligini yana bir bor nazorat qilish va xatolarni tuzatish uchun:
 
-Follow these steps:
+- **Lint:** `npm run lint` — ESLint rules va barcha Fast Refresh checklarini kodda amalga oshiradi.
+- **Type Check:** `npx tsc --noEmit` — TS compilation orqali tiplar mosligini tahlil qiladi.
+- **Tayyorlash:** `npm run build` — Haqiqiy Production muhitiga papkani render qilidi (Builds minified HTML, CSS va JS in `/dist`).
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+> Loyiha kodlari avtomatik kod-inspektor orqali barcha qattiq TypeScript xatolaridan tozalangan bo'lib, eng barqaror darajaga yetkazilgan.

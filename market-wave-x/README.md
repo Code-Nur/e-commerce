@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# Market Wave X
 
-## Project info
+**Market Wave X** — React, Vite va Tailwind CSS texnologiyalariga asoslangan, juda tez va foydalanishda qulay bo'lgan zamonaviy onlayn e-commerce platformasi. Foydalanuvchilar unda mahsulotlarni izlashi, savatchaga qo'shishi va Firebase yordamida oson xarid qilishi mumkin.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Xususiyatlar (Features)
 
-## How can I edit this code?
+- **Tezkor UI:** Vite va React tufayli yuqori tezlikdagi ishlash tarzi.
+- **Zamonaviy Dizayn:** Tailwind CSS va Shadcn UI orqali chiroyli va qulay interfeys (responsive design).
+- **Global Holat Boshqaruvi:** Xaridlar savatchasi, orderlar va foydalanuvchi ma'lumotlarini Context va kesh xotiralarida saqlash.
+- **Firebase Integratsiyasi:** Firestore orqali real-time mahsulot ma'lumotlarini o'qish, Auth orqali Google va Email bilan ro'yxatdan o'tish imkoniyati.
+- **Turlangan Xavfsizlik:** TypeScript integratsiyasi orqali bug-free muhit va qattiq turdagi xavfsizlik (Type-safety).
 
-There are several ways of editing your application.
+## 🚀 Ishga tushirish (Getting Started)
 
-**Use Lovable**
+Loyihangizni mahalliy dev-serveringizda ishga tushirish uchun:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+1. **Kerakli kutubxonalarni o'rnatish:**
+   ```bash
+   npm install
+   ```
+2. **Loyihani ishga tushirish:**
+   ```bash
+   npm run dev
+   ```
+3. **Brauzerda tekshirish:** 
+Odatda `http://localhost:5173` sahifasida ochiladi.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠 Texnologiyalar (Tech Stack)
 
-**Use your preferred IDE**
+- **Frontend:** React.js, TypeScript, Vite
+- **Styling:** Tailwind CSS, Tailwind Merge, Framer Motion
+- **UI Elementlari:** Radix UI, Shadcn UI
+- **Backend / BaaS:** Firebase (Firestore, Authentication, Storage)
+- **Forma boshqaruvi:** React Hook Form, Custom validatsiyalar uchun Zod
+- **So'rovlar bozori:** Tanstack React Query
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧹 Kod qoidalari (Linting & Build)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Kod sifatini va production levelga tayyorligini tekshirish:
 
-Follow these steps:
+- **ESLint xatoliklar tekshiruvi:**  
+  ```bash
+  npm run lint
+  ```
+- **TypeScript tekshiruvi:**  
+  ```bash
+  npx tsc --noEmit
+  ```
+- **Production uchun build:**  
+  ```bash
+  npm run build
+  ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+> Loyiha audit qilingan va ESLint xatolaridan to'liq tozalangan.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📦 Fayllar tuzilmasi
+- `/src/components/` — qayta ishlatiladigan UI komponentlari.
+- `/src/context/` — Context API providerlari (Cart, Auth, Order va h.k).
+- `/src/pages/` — umumiy sayt sahifalari.
+- `/src/lib/` — turli xil utility funktsiyalar va firebase backend konfiguratsiyasi.

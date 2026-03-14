@@ -10,7 +10,8 @@ const LoginPage = () => {
   const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
-  const from = (location.state as any)?.from || "/";
+  const state = location.state as { from?: string } | null;
+  const from = state?.from || "/";
 
   const [isSignUp, setIsSignUp] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -27,8 +28,8 @@ const LoginPage = () => {
       await signInWithGoogle();
       toast.success("Muvaffaqiyatli kirdingiz!");
       navigate(from, { replace: true });
-    } catch (err: any) {
-      toast.error(err.message || "Xatolik yuz berdi");
+    } catch (err: unknown) {
+      toast.error(err instanceof Error ? err.message : "Xatolik yuz berdi");
     } finally {
       setLoading(false);
     }
@@ -54,7 +55,8 @@ const LoginPage = () => {
         toast.success("Muvaffaqiyatli kirdingiz!");
       }
       navigate(from, { replace: true });
-    } catch (err: any) {
+    } catch (error: unknown) {
+      const err = error as { code?: string };
       const msg = err.code === "auth/user-not-found" ? "Foydalanuvchi topilmadi"
         : err.code === "auth/wrong-password" ? "Parol noto'g'ri"
         : err.code === "auth/email-already-in-use" ? "Bu email allaqachon ro'yxatdan o'tgan"
