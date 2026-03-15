@@ -7,7 +7,7 @@ import Layout from "@/components/Layout";
 import { toast } from "sonner";
 
 const LoginPage = () => {
-  const { signInWithGoogle, signInWithEmail, signUpWithEmail } = useAuth();
+  const { signInWithGoogle, signInWithGoogleRedirect, signInWithEmail, signUpWithEmail } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const state = location.state as { from?: string } | null;
@@ -28,8 +28,24 @@ const LoginPage = () => {
       await signInWithGoogle();
       toast.success("Muvaffaqiyatli kirdingiz!");
       navigate(from, { replace: true });
-    } catch (err: unknown) {
-      toast.error(err instanceof Error ? err.message : "Xatolik yuz berdi");
+    } catch (error: unknown) {
+      console.error("Google login error:", error);
+      const err = error as { code?: string };
+      
+      if (err.code === "auth/popup-blocked") {
+        toast.error("Popup bloklandi. Brauzer sozlamalarida popup ruxsatini tekshiring.");
+      } else if (err.code === "auth/unauthorized-domain") {
+        toast.error(
+          "Ushbu domen (unhopingly-meteoritic-racheal.ngrok-free.dev) Firebase'da ruxsat etilmagan. Iltimos, Firebase Console -> Authentication -> Settings -> Authorized Domains ro'yxatiga ushbu domenni qo'shing.",
+          { duration: 10000 }
+        );
+      } else if (err.code === "auth/popup-closed-by-user") {
+        toast.info("Kirish oynasi yopildi.");
+      } else if (err.code === "auth/operation-not-allowed") {
+        toast.error("Firebase'da Google sign-in yoqilmagan. Iltimos, Authentication -> Sign-in method bo'limidan Google ni yoqing.");
+      } else {
+        toast.error(err instanceof Error ? err.message : "Xatolik yuz berdi");
+      }
     } finally {
       setLoading(false);
     }
