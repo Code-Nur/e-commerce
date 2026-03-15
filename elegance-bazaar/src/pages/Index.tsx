@@ -154,14 +154,13 @@ const Index = () => {
                   transition={{ delay: i * 0.05 }}
                 >
                   <Link
-                    to={`/products?category=${cat.id}`}
+                    to={`/products?category=${cat.name}`}
                     className="flex flex-col items-center gap-3 rounded-xl border border-border bg-card p-6 text-center shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
                   >
                     <span className="text-primary">
                       <LucideIconByName name={cat.icon} size={28} />
                     </span>
                     <span className="font-display text-sm font-semibold text-foreground">{cat.name}</span>
-                    <span className="text-xs text-muted-foreground">{cat.count} mahsulot</span>
                   </Link>
                 </motion.div>
               ))}

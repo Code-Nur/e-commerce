@@ -55,7 +55,7 @@ const CategoriesPage = () => {
                 transition={{ delay: i * 0.08 }}
               >
                 <Link
-                  to={`/products?category=${cat.id}`}
+                  to={`/products?category=${cat.name}`}
                   className="flex items-center gap-5 rounded-xl border border-border bg-card p-6 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover"
                 >
                   <span className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
@@ -63,7 +63,6 @@ const CategoriesPage = () => {
                   </span>
                   <div>
                     <h3 className="font-display text-lg font-bold text-foreground">{cat.name}</h3>
-                    <p className="text-sm text-muted-foreground">{cat.count} mahsulot</p>
                   </div>
                 </Link>
               </motion.div>

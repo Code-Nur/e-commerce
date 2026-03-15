@@ -133,9 +133,9 @@ const ProductsPage = () => {
               categories.map((cat) => (
                 <button
                   key={cat.id}
-                  onClick={() => setCategory(cat.id)}
+                  onClick={() => setCategory(cat.name)}
                   className={`inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-medium transition-colors ${
-                    activeCategory === cat.id
+                    activeCategory === cat.name
                       ? "bg-primary text-primary-foreground"
                       : "bg-muted text-muted-foreground hover:bg-muted/80"
                   }`}
