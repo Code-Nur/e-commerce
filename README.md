@@ -1,3 +1,9 @@
+## 🤝 Hissa qo'shish (Contributing)
+Loyiha faqat xususiy maqsadlar uchun qurilgan. Kodni ochib aslo o'zgartirmang kodlar 24/7 nazoratim ostida, muammo istamasangiz kodga umuman tegmang! Agar o'zgartirish kiritmoqchi bo'lsangiz @CodeNur ga murojat qiling.
+
+## elegance-bazaar, market-wave-x
+Bu loyhalarni ishlatishdan oldin README.md fayllarini yaxshilab o'qib chiqing!!
+
 # E-Commerce Projects Workspace
 
 Ushbu repozitoriy o'z ichiga ikkita zamonaviy e-commerce (elektron tijorat) loyihalarini oladi:
@@ -63,5 +69,3 @@ Loyihalar to'liq analiz qilingan va barcha xatoliklardan tozalangan. Tahlilni is
 - TypeScript tiplarni tekshirish: `npx tsc --noEmit`
 - Production uchun tayyorlash: `npm run build`
 
-## 🤝 Hissa qo'shish (Contributing)
-Loyiha faqat xususiy maqsadlar uchun qurilgan. Kodni ochib aslo o'zgartirmang kodlar 24/7 nazoratim ostida, muammo istamasangiz kodga umuman tegmang! Agar o'zgartirish kiritmoqchi bo'lsangiz @CodeNur ga aloqaga chiqing.

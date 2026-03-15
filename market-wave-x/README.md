@@ -14,15 +14,19 @@
 
 Loyihangizni mahalliy dev-serveringizda ishga tushirish uchun:
 
-1. **Kerakli kutubxonalarni o'rnatish:**
+1. **Avvalo "animation.json" faylni serverga joylang!
+
+Yokida local ishga tushurib sinash uchun esa 👇
+
+2. **Kerakli kutubxonalarni o'rnatish:**
    ```bash
    npm install
    ```
-2. **Loyihani ishga tushirish:**
+3. **Loyihani ishga tushirish:**
    ```bash
    npm run dev
    ```
-3. **Brauzerda tekshirish:** 
+4. **Brauzerda tekshirish:** 
 Odatda `http://localhost:5173` sahifasida ochiladi.
 
 ## 🛠 Texnologiyalar (Tech Stack)
