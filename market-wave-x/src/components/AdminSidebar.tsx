@@ -1,6 +1,5 @@
 import {
   LayoutDashboard,
-  Users,
   FolderTree,
   Package,
   ShoppingCart,
@@ -27,7 +26,6 @@ import { auth } from "@/lib/firebase";
 
 const menuItems = [
   { title: "Bosh sahifa", url: "/admin", icon: LayoutDashboard },
-  { title: "Foydalanuvchilar", url: "/admin/users", icon: Users },
   { title: "Kategoriyalar", url: "/admin/categories", icon: FolderTree },
   { title: "Mahsulotlar", url: "/admin/products", icon: Package },
   { title: "Buyurtmalar", url: "/admin/orders", icon: ShoppingCart },

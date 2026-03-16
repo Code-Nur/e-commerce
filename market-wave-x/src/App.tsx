@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import AdminLayout from "./components/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
-import UsersPage from "./pages/admin/UsersPage";
 import CategoriesPage from "./pages/admin/CategoriesPage";
 import ProductsPage from "./pages/admin/ProductsPage";
 import OrdersPage from "./pages/admin/OrdersPage";
@@ -27,7 +26,7 @@ const App = () => (
           <Route path="/my-orders" element={<MyOrdersPage />} />
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Dashboard />} />
-            <Route path="users" element={<UsersPage />} />
+            <Route path="users" element={<Navigate to="/admin" replace />} />
             <Route path="categories" element={<CategoriesPage />} />
             <Route path="products" element={<ProductsPage />} />
             <Route path="orders" element={<OrdersPage />} />

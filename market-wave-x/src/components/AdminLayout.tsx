@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import { Navigate, Outlet } from "react-router-dom";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AdminSidebar } from "@/components/AdminSidebar";
+import { AdminChangePasswordDialog } from "@/components/AdminChangePasswordDialog";
 import { useAdmin } from "@/hooks/useAdmin";
 import { Skeleton } from "@/components/ui/skeleton";
 import { collection, onSnapshot } from "firebase/firestore";
@@ -98,7 +99,10 @@ export default function AdminLayout() {
           <header className="h-14 flex items-center border-b bg-card px-4 gap-3">
             <SidebarTrigger />
             <h2 className="font-semibold text-foreground">Admin Panel</h2>
-            <div className="ml-auto text-sm text-muted-foreground">{user.email}</div>
+            <div className="ml-auto flex items-center gap-3">
+              <AdminChangePasswordDialog user={user} />
+              <div className="text-sm text-muted-foreground">{user.email}</div>
+            </div>
           </header>
           <main className="flex-1 p-6 overflow-auto">
             <Outlet />
