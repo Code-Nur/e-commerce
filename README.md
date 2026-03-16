@@ -12,7 +12,7 @@ Ushbu repozitoriy o'z ichiga ikkita zamonaviy e-commerce (elektron tijorat) loyi
 2. **[Market Wave X](./market-wave-x/)** - Yana bir tezkor, xavfsiz va samarali elektron tijorat ilovasi.
 
 ## 🌐 Jonli Namunalar (Live Demos)
-- **User Panel (Elegance Bazaar):** [elegance-bazar.vercel.app](https://elegance-bazar.vercel.app/)
+- **User Panel (Elegance Bazaar):** [elegance-bazar-two.vercel.app](https://elegance-bazar-two.vercel.app/)
 - **Admin Panel:** [market-wave-x.vercel.app](market-wave-x.vercel.app)
 
 ## 🚀 Texnologiyalar
