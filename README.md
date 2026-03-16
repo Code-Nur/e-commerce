@@ -13,7 +13,7 @@ Ushbu repozitoriy o'z ichiga ikkita zamonaviy e-commerce (elektron tijorat) loyi
 
 ## 🌐 Jonli Namunalar (Live Demos)
 - **User Panel (Elegance Bazaar):** [elegance-bazar.vercel.app](https://elegance-bazar.vercel.app/)
-- **Admin Panel:** [e-commerce-bazar-admin.vercel.app](https://e-commerce-bazar-admin.vercel.app/)
+- **Admin Panel:** [market-wave-x.vercel.app](market-wave-x.vercel.app)
 
 ## 🚀 Texnologiyalar
 
